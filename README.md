@@ -1,27 +1,50 @@
-# ecommerce
-"npm run dev" to run app
-using "upstash.com" to use redis database
-using "cloudinary" to store images
-using "stripe.com" to build payment
+# User Authentication
+![Signup Page](./frontend/public/sign%20up%20page.png)
 
-".aggregate" is a MongoDB method used to perform aggregation operations — which are like SQL's GROUP BY, JOIN, SUM, AVG, etc.
+![Login Page](./frontend/public/login%20page.png)
 
-"3:15:00" to add "getProfile" route
+# MongoDB and Redis
+![Redis](./frontend/public/redis%20img.png)
+Redis will store featured products and refresh tokens
 
-Frontend
-Delete "App.css"
+![MongoDB](./frontend/public/mongoBD.png)
+MongoBD store user, product, orders, coupons data
 
-all lib "npm i axios @stripe/stripe-js framer-motion lucide-react react-confetti react-hot-toast react-router-dom recharts zustand"
+# Pages
+![Home Page](./frontend/public/home%20page.png)
 
-using shortcut "rafce" to create a react arrow function
+![Cart Page](./frontend/public/cart%20UI.png)
 
-using "axios" to make requests to our backend such as GET, POST, PUT, DELETE (example: "axios.get('/api/products').then(...)" )
+![Stripe Payment Page](./frontend/public/stripe%20payment.png)
 
-using <motion.div> instead of <div> to add animations
+![Checkout Success Page](./frontend/public/check%20out%20successful.png)
+After successful payment, the user automatically receive email about Order ID, Total cost.
 
-using "Zustand" because it improve "state" compared to React
+![Checkout Cancel Page](./frontend/public/check%20out%20cancel.png)
+User click on "Back" to cancel payment
 
----DEPLOY website via "render.com"
-add " "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend" " under " "scripts": {
-    "dev": "nodemon backend/server.js",
-    "start": "node backend/server.js", ... " code in "package.json" OUTSIDE (NOT IN front-end or backend).
+# Email Confirmation
+![Email Confirmation](./frontend/public/email%20confirmation.png)
+
+# Admin Features
+![Create Product Page](./frontend/public/create%20product.png)
+
+![Modify Product Page](./frontend/public/products%20modify.png)
+All products pop up and Admin can trigger featured products
+
+![Analytics Page](./frontend/public/analytics.png)
+This page show the chart to track Products bills, Revenue, User count
+
+
+
+
+
+
+
+
+
+
+
+
+## Expanding the ESLint configuration
+

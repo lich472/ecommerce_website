@@ -66,7 +66,6 @@ export const createCheckoutSession = async (req, res) => {
 						price: p.price,
 						// send email success purchase
 						productName: p.name,
-						productImage: p.image,
 					}))
 				),
 			},
@@ -124,14 +123,6 @@ export const checkoutSuccess = async (req, res) => {
 
     // Send email if not already sent
     if (user && products.length > 0 && !order.emailSent) {
-      	// const html = PurchaseConfirmationEmail({
-		// 	order: {
-		// 		customerName: user.name,
-		// 		id: order._id,
-		// 		total: session.amount_total / 100,
-		// 	},
-		// });
-
 		const html = ReactDOMServer.renderToStaticMarkup(
 			React.createElement(PurchaseConfirmationEmail, {
 				order: {

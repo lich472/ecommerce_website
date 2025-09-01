@@ -1,15 +1,30 @@
-# React + Vite
+# ecommerce
+"npm run dev" to run app
+using "upstash.com" to use redis database
+using "cloudinary" to store images
+using "stripe.com" to build payment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+".aggregate" is a MongoDB method used to perform aggregation operations — which are like SQL's GROUP BY, JOIN, SUM, AVG, etc.
 
-Currently, two official plugins are available:
+"3:15:00" to add "getProfile" route
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend
+Delete "App.css"
 
-## Expanding the ESLint configuration
+all lib "npm i axios @stripe/stripe-js framer-motion lucide-react react-confetti react-hot-toast react-router-dom recharts zustand"
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+using shortcut "rafce" to create a react arrow function
+
+using "axios" to make requests to our backend such as GET, POST, PUT, DELETE (example: "axios.get('/api/products').then(...)" )
+
+using <motion.div> instead of <div> to add animations
+
+using "Zustand" because it improve "state" compared to React
+
+---DEPLOY website via "render.com"
+add " "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend" " under " "scripts": {
+    "dev": "nodemon backend/server.js",
+    "start": "node backend/server.js", ... " code in "package.json" OUTSIDE (NOT IN front-end or backend).
 
 ## use "resend.com" to send email script
 
