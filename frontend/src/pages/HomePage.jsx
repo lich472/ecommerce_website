@@ -4,11 +4,11 @@ import FeaturedProducts from "../components/FeaturedProducts.jsx";
 import { useProductStore } from "../stores/useProductStore.js";
 
 const categories = [
-	{ href: "/jeans", name: "Jeans", imageUrl: "/jeans.jpg" },
-	{ href: "/t-shirts", name: "T-shirts", imageUrl: "/tshirts.jpg" },
-	{ href: "/shoes", name: "Shoes", imageUrl: "/shoes.jpg" },
-	{ href: "/glasses", name: "Glasses", imageUrl: "/glasses.png" },
-	{ href: "/jackets", name: "Jackets", imageUrl: "/jackets.jpg" },
+	{ href: "/iphone", name: "Iphones", imageUrl: "/iphone.png" },
+	{ href: "/samsung", name: "Samsungs", imageUrl: "/samsung.png" },
+	{ href: "/screenPlacement", name: "Screen Replacements", imageUrl: "/damagedPhone.png" },
+	{ href: "/otherCommonFix", name: "Other Common Fix", imageUrl: "/otherFix.png" },
+	{ href: "/batteryReplacement", name: "Battery Replacements", imageUrl: "/battery.png" },
 	{ href: "/suits", name: "Suits", imageUrl: "/suits.jpg" },
 	{ href: "/bags", name: "Bags", imageUrl: "/bags.jpg" },
 ];

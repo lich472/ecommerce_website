@@ -126,6 +126,33 @@ export const getProductsByCategory = async (req, res) => {
 	}
 };
 
+// export const searchProducts = async (req, res) => {
+//   const { query } = req.query;
+
+//   try {
+//     // case-insensitive partial match on name or description
+//     const products = await Product.find({
+//       $or: [
+//         { name: { $regex: query, $options: "i" } }
+//       ],
+//     });
+//     res.json(products);
+//   } catch (error) {
+//     res.status(500).json({ message: error.message });
+//   }
+// };
+
+export const searchProducts = async (req, res) => {
+  const { q, category } = req.query;
+
+  let filter = {};
+  if (q) filter.name = { $regex: q, $options: "i" }; // search term
+  if (category) filter.category = category; // only return products from that category
+
+  const products = await Product.find(filter);
+  res.json(products);
+};
+
 export const toggleFeaturedProduct = async (req, res) => {
 	try {
 		const product = await Product.findById(req.params.id);

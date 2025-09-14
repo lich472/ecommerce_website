@@ -36,6 +36,10 @@ const userSchema = new mongoose.Schema(
 			enum: ["customer", "admin"],
 			default: "customer",
 		},
+		address: {
+			type: String,
+			required: [true, "Address is required"],
+		}
 	},
 	{
 		timestamps: true,
