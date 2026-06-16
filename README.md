@@ -3,6 +3,11 @@
 
 ![Login Page](./frontend/public/login%20page.png)
 
+> [!NOTE]
+> Use the **Admin** credentials below to access the **Dashboard** feature:
+> - **Email address:** `nguyenthanhlich18052003@gmail.com`
+> - **Password:** `Password1234`
+
 # MongoDB and Redis
 Redis will store featured products and refresh tokens
 ![Redis](./frontend/public/redis%20img.png)
