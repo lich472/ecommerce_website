@@ -2,6 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { PlusCircle, Upload, Loader } from "lucide-react";
 import { useProductStore } from "../stores/useProductStore";
+import { formatPriceAUS } from "../lib/format";
+
 
 const categories = ["iphone", "samsung", "otherBrand", "screenReplacement", "otherCommonFix", "batteryReplacement"];
 
@@ -91,7 +93,7 @@ const CreateProductForm = () => {
 						type='number'
 						id='price'
 						name='price'
-						value={newProduct.price}
+						value={formatPriceAUS(newProduct.price)}
 						onChange={(e) => setNewProduct({ ...newProduct, price: e.target.value })}
 						step='0.01'
 						className='mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md shadow-sm 

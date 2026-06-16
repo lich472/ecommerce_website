@@ -57,7 +57,7 @@ const AnalyticsTab = () => {
 				/>
 				<AnalyticsCard
 					title='Total Revenue'
-					value={`${analyticsData.totalRevenue.toLocaleString('en-AU', { style: 'currency', currency: 'AUD' })}`}
+					value={`${analyticsData.totalRevenue}`}
 					icon={DollarSign}
 					color='from-sky-500 to-lime-700'
 				/>

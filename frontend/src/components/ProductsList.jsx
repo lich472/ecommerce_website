@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Trash, Star } from "lucide-react";
 import { useProductStore } from "../stores/useProductStore";
+import { formatPriceAUS } from "../lib/format";
+
 
 const ProductsList = () => {
 	const { deleteProduct, toggleFeaturedProduct, products } = useProductStore();
@@ -69,7 +71,7 @@ const ProductsList = () => {
 								</div>
 							</td>
 							<td className='px-6 py-4 whitespace-nowrap'>
-								<div className='text-sm text-gray-300'>{product.price.toLocaleString('en-AU', { style: 'currency', currency: 'AUD' })}</div>
+								<div className='text-sm text-gray-300'>{formatPriceAUS(product.price)}</div>
 							</td>
 							<td className='px-6 py-4 whitespace-nowrap'>
 								<div className='text-sm text-gray-300'>{product.category}</div>

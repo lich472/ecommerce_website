@@ -3,6 +3,8 @@ import { ShoppingCart } from "lucide-react";
 import { useUserStore } from "../stores/useUserStore";
 import { useCartStore } from "../stores/useCartStore";
 import { useNavigate } from "react-router-dom";
+import { formatPriceAUS } from "../lib/format";
+
 
 const ProductCard = ({ product }) => {
 	const { user } = useUserStore();
@@ -51,7 +53,7 @@ const ProductCard = ({ product }) => {
 
 				<div className='mt-2 mb-5 flex items-center justify-between'>
 					<p>
-						<span className='text-3xl font-bold text-black'>{product.price.toLocaleString('en-AU', { style: 'currency', currency: 'AUD' })}</span>
+						<span className='text-3xl font-bold text-black'>{formatPriceAUS(product.price)}</span>
 					</p>
 				</div>
 			
