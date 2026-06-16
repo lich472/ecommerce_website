@@ -31,7 +31,7 @@ const PurchaseConfirmationEmail = ({
               />
               <Text style={courseTitleStyle}>{productName}</Text>
               <Text style={priceText}>
-                Amount paid: ${totalAmount.toFixed(2)}
+                Amount paid: {totalAmount.toLocaleString('en-AU', { style: 'currency', currency: 'AUD' })}
               </Text>
             </Section>
 
