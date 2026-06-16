@@ -40,7 +40,7 @@ const GiftCouponCard = () => {
 						type='text'
 						id='voucher'
 						className='block w-full rounded-lg border border-gray-600 bg-gray-100 
-            p-2.5 text-sm text-white placeholder-gray-400 focus:border-sky-500 
+            p-2.5 text-sm text-shadow-red-800 placeholder-gray-400 focus:border-sky-500 
             focus:ring-sky-500'
 						placeholder='Enter code here'
 						value={userInputCode}
@@ -83,7 +83,7 @@ const GiftCouponCard = () => {
 
 			{coupon && (
 				<div className='mt-4'>
-					<h3 className='text-lg font-medium text-gray-300'>Your Available Coupon:</h3>
+					<h3 className='text-lg font-medium text-gray-600'>Your Available Coupon:</h3>
 					<p className='mt-2 text-sm text-gray-400'>
 						{coupon.code} - {coupon.discountPercentage}% off
 					</p>

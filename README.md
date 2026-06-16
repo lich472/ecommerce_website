@@ -17,10 +17,11 @@ MongoBD store user, product, orders, coupons data
 
 ### Cart Page
 User can apply or delete coupon, show the Saving price, Total price, Original price.
-![Cart Page](./frontend/public/cart%20UI.png)
+![Stripe Payment Page](./frontend/public/stripe%20payment.png)
+
 
 ### Stripe Payment Page
-![Stripe Payment Page](./frontend/public/stripe%20payment.png)
+![Cart Page](./frontend/public/card%20UI.png)
 
 ### Checkout Success Page
 After successful payment, the user automatically receive email about Order ID, Total cost.
